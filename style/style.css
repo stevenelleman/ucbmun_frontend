@@ -1,0 +1,67 @@
+/* Navigation */
+
+.nav-container {
+
+}
+
+/* Initial presentation, triggered by scroll-down, use calhacks */
+.nav-bar-active {
+
+}
+
+.nav-bar {
+
+}
+
+.logo {
+
+}
+.home-link {
+
+}
+.about-link {
+
+}
+.committee-link {
+
+}
+.info-link {
+
+}
+.attraction-link {
+
+}
+.apply-link {
+
+}
+
+/* Home */
+.home-container {
+  background-image: url();
+  height: 100%;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*clear: both;
+  margin-bottom: 2px;*/
+}
+
+/* About Us */
+.about-container {
+
+}
+
+/* Information */
+.info-container {
+
+}
+/* Committees */
+.committee-container {
+
+}
+/* Attractions */
+.attraction-container {
+
+}
