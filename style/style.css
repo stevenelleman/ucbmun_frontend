@@ -65,8 +65,6 @@
     -moz-transition: all 0.5s linear;
     -ms-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
-    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-    animation-delay: 4s;
 }
 
 .nav-bar {
@@ -121,6 +119,7 @@
 }
 .logo_container {
   float: left;
+  position: absolute;
     list-style-type: none;
     margin-top: 0px;
     /* vertical-align: middle; */
@@ -214,7 +213,7 @@
   height: 100%;
 }
 .about-banner {
-  height: 500px;
+  height:100%;
   /* width: 0%; */
   margin: 0 auto;
   background-position: 50% 80%;
@@ -237,6 +236,88 @@
 .info-container {
 
 }
+
+#secretariat-title {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.secretariat-title {
+  font-family: code-light;
+    font-size: 1.2em;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 20px;
+    color: orange;
+    letter-spacing: 3;
+}
+
+.secretariat-title-active {
+  font-family: code-light;
+    font-size: 1.2em;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 20px;
+    color: orange;
+    letter-spacing: 3;
+    opacity: 1;
+}
+
+.secretariat-contents-container {
+  margin-top: 43px;
+  white-space: nowrap;
+  width: 100%
+}
+
+.secretariat-container {
+  float: left;
+    position: relative;
+    width: 25%;
+    padding: 1.5px;
+    /* padding-bottom: 3px; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.secretariat-info {
+  background-color: orange;
+  height: 50px;
+}
+
+.secretariat-img {
+  background-color: #152c6d;
+  height: 200px;
+}
+
+.secretariat-contact {
+  height:0px;
+  width: 100%;
+  position: absolute;
+  bottom: 1;
+  transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.secretariat-contact-active {
+  height: 100px;
+width: 100%;
+position: absolute;
+bottom: 1;
+border-right: solid;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+background-color: green;
+border-bottom-color: white;
+border-right-color: white;
+}
+
 /* Committees */
 .committee-container {
 

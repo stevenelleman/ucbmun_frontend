@@ -97,7 +97,7 @@
         disableMouse: true,
 
         //fixing bug in iScroll with links: https://github.com/cubiq/iscroll/issues/783
-        click: true 
+        click: true
     };
 
     $.fn.fullpage = function(options) {
@@ -130,7 +130,7 @@
             scrollingSpeed: 700,
             autoScrolling: true,
             fitToSection: true,
-            fitToSectionDelay: 1000,
+            fitToSectionDelay: 100,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
             loopBottom: false,
