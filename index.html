@@ -1,60 +1,99 @@
 <!DOCTYPE hmtl>
 <html>
+
 <head>
+<title> UCBMUN XXI </title>
+<link rel="stylesheet" type="text/css" href="./js/fullPage.js-master/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./style/style.css" />
 
-<style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-</style>
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="./js/fullPage.js-master/vendors/jquery.easings.min.js"></script>
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="./js/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="./js/fullPage.js-master/jquery.fullPage.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
 </head>
 <body>
 
 <div class="nav-container">
-  <div class="nav-bar-active">
-    <div class="logo"></div>
-    <div class="home-link">
-      <a href="#home">
-        Home
-      </a>
-    </div>
-    <div class="about-link">
-      <a href="#about">
-        About Us
-      </a>
-    </div>
-    <div class="committee-link">
-      <a href="#committee">
-        Committees
-      </a>
-    </div>
-    <div class="info-link">
-      <a href="#info">
-        Information
-      </a>
-    </div>
-    <div class="attraction-link">
-      <a href="#attraction">
-        Attraction
-      </a>
-    </div>
-    <div class="apply-link">
-      <a href="">
-        Apply
-      </a>
-    </div>
+  <div id="navigation" class="nav-bar-active">
+    <ul class="logo_container">
+      <div class="logo">
+        <img src="images/ucbmun_logo.png">
+      </div>
+      <div class="ucbmun">
+        UCBMUN XXI
+      </div>
+    </ul>
+
+    <ul class="links-active" id="links">
+      <div class="home-link link underline" data-menuanchor="home">
+          <a href="#home">
+            Home
+          </a>
+      </div>
+      <li class="about-link link" data-menuanchor="about">
+        <a href="#about">
+          About Us
+        </a>
+      </li>
+      <li class="committee-link link" data-menuanchor="committee">
+        <a href="#committee">
+          Committees
+        </a>
+      </li>
+      <li class="info-link link" data-menuanchor="info">
+        <a href="#info">
+          Information
+        </a>
+      </li>
+      <li class="attraction-link link" data-menuanchor="attraction">
+        <a href="#attraction">
+          Attractions
+        </a>
+      </li>
+      <li class="apply-link link">
+          Apply
+      </li>
   </div>
 </div>
 
 <div id="fullpage">
-  <div id="home" class="home-container section">
+  <div id="home" data-anchor="home" class="home-container section"  style="background-image:url(http://www.stevenelleman.com/pw2-images/images/showcase/showcase_palacearts.jpg);">
     <div class="home-title">
     </div>
   </div>
 
-  <div id="about" class="about-container section">
+  <div data-anchor="about" class="about-container section">
 
+    <div class="about-contents-container">
+      <div class="about-banner" style="background-image:url(images/about15.jpg);">
+        <div class="about-title">
+
+        </div>
+      </div>
+      <div class="about-letter">
+        Dear Head Delegates and Advisors,
+        <br></br>
+
+My name is Varsha Venkatasubramanian and I am the Secretary-General for the UC Berkeley Model United Nations Conference in March 2016. UCBMUN is in our 20th year and we are proud to be one of the oldest Model UN programs in the country. Each year our conference brings hundreds of delegates from top universities across the nation and the world to San Francisco, California to debate sociopolitical issues that resonate across the globe.
+
+This year, UCBMUN XX will be hosted from March 3rd to March 6th at the Hilton, Financial District, San Francisco. Delegates will participate in committees, utilizing months of research and preparation to develop resolutions for major geopolitical problems. Our diverse delegates come from various fields, colleges, and regions.
+
+UCBMUN creates opportunities for potential leaders of the next generation to engage in multi-faceted dialogue, face personal growth, gain comprehensive perspectives on world issues, and learn about the trials and triumphs of international diplomacy, all in the hopes of creating a better of tomorrow.
+
+Our conference draws highly motivated individuals that have already made impacts in their communities and will undoubtedly continue to do so in the future. We look forward to your joining us in this exciting journey and experience all that UCBMUN and San Francisco have to offer! If you have any questions or concerns, please don't hesitate to email me at sg@ucbmun.org.
+
+Sincerely, Varsha Venkatasubramanian
+      </div>
+    </div>
   </div>
 
-  <div id="committee" class="committee-container section">
+  <div data-anchor="committee" class="committee-container section">
     <div class="committee-contents-container">
       <div class="committee-section">
         <div class="committee-section-title">
@@ -77,31 +116,120 @@
     </div>
   </div>
 
-  <div id="info" class="info-container section">
+  <div data-anchor="info" class="info-container section">
     <div class="info-contents-container">
       <div class="title"></div>
       <div class="info-contents">
         <div class="info-contents-section">
-          Fee
+          <div class="fee-title">
+            Fee
+          </div>
+          <div class="fee-content info-hidden">
+              <div id="info_text">
+                  <table style="width:100%; font-size: 16px;">
+                      <tbody><tr>
+                          <th></th>
+                          <th>Early</th>
+                          <th>Regular</th>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td>Sept 15 - Dec 1</td>
+                          <td>Dec 2 - Feb 15</td>
+                      </tr>
+                      <tr>
+                          <td>Delegation Fee</td>
+                          <td>$85</td>
+                          <td>$95</td>
+
+                      </tr>
+                      <tr>
+                          <td>Per Delegate</td>
+                          <td>$85</td>
+                          <td>$95</td>
+                      </tr>
+                      <tr>
+                          <td>Per Faculty Advisor</td>
+                          <td>$0 (Yay)</td>
+                          <td>$0 (Yay)</td>
+                      </tr>
+                  </tbody></table>
+              </div>
+
+              <div class="registration-contents">
+                <div class="registration-title">
+                  Registration Terms
+                </div>
+                <div class="registration-content info-hidden">
+                  <div id="terms_content">
+                      <ol>
+                          <li>
+                              <b>Payments</b><br>
+                              Payments should be made in the form of checks payable to:
+                              ASUC/UCBMUN
+                              c/o LEAD Center
+                              102 Hearst Gym MC 4500
+                              Berkeley, CA 94720-4500
+                              [UCBMUN is sponsored by the Associated Students of the University of California, a 501c3 Non-Profit Organization supporting student initiated activities]
+                          </li>
+                          <li>
+                              <b>Proof of Payment</b><br>
+                              In order to ease registration and prevent lost checks we ask that you send us Proof of Payment. Proof of Payment can either be a copy or a photo of the completed check or the USPS/UPS/FedEx tracking number, sent electronically to cos-external@ucbmun.org. The Proof of Payment is due within 20 days of Early or Regular registration (and before BayMUN if you wish to attend), and definitely within 7 days of the last registration date. If you fail to send Proof of Payment by that date and have not communicated with our Chief of Staff External, you will not be allowed to participate in UCBMUN XX. In case of special circumstances, please contact our Chief of Staff - External.
+                          </li>
+                          <li>
+                              <b>Delegation Change Guidelines</b><br>
+                              We understand that change happens and sometimes members back out of events for various reasons. If you wish to change your delegation you must inform the Chief of Staff - External within 4 weeks of your registration or February 14th whichever is earlier in order to receive a full refund. If you reduce the size of your delegation UCBMUN will refund your delegation on the first day of the conference. If you increase the size of your delegation you must bring a check for the additional amount owed on the first day of the conference.
+                          </li>
+                          <li>
+                            <b> Refund Policy </b><br>
+
+      Delegations will be refunded their entire payment if they inform UCBMUN staff of their cancellation within 30 days of registering.
+      Delegations will be refunded half their payment if they inform UCBMUN staff of their cancellation within 60 days of registering.
+      Delegations will not be refunded if they fail to inform UCBMUN staff of their cancellation within 60 days of registering.
+                          </li>
+                          <li>
+                              <b>Enforcement Policy</b><br>
+                              We will work with you to ensure that every member of your delegation is able to participate. We will not allow any delegates to participate if they have not paid within the appropriate timeframe and not contacted our Chief of Staff External. If you have any questions feel free to contact us.
+                          </li><br>
+
+                      </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of fees -->
+        <div class="info-contents-section">
+          <div class="schedule-title">
+            Schedule
+          </div>
+          <div class="schedule-content info-hidden">
+            <div class="scedule-column column-1">
+            </div>
+            <div class="scedule-column column-2">
+            </div>
+            <div class="scedule-column column-3">
+            </div>
+            <div class="scedule-column column-4">
+            </div>
+          </div>
         </div>
         <div class="info-contents-section">
-          Schedule
-        </div>
-        <div class="info-contents-section">
-          Location Assignments
-        </div>
-        <div class="info-contents-section">
-          Resources
-        </div>
-        <div class="info-contents-section">
-          Sponsors
+          <div class="resource-title">
+            Resources
+          </div>
+          <div class="resource-content info-hidden">
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 <div id="attraction" class="attraction-container section">
+  <div data-anchor="attraction" class="attraction-container section">
+  </div>
+</div>
 </div>
 
 
