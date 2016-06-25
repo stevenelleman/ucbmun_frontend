@@ -3,40 +3,40 @@
 /*Good for nav */
 @font-face {
   font-family: "code-bold";
-  src: url("/Users/stevenelleman/Library/Fonts/CODE Bold.otf");
+  src: url("fonts/CODE Bold.otf");
 
 }
 
 @font-face {
   font-family: "code-light";
-  src: url("/Users/stevenelleman/Library/Fonts/CODE Light.otf");
+  src: url("fonts/CODE Light.otf");
 
 }
 
 @font-face {
   font-family: "ikaros";
-  src: url("/Users/stevenelleman/Library/Fonts/Ikaros.otf");
+  src: url("fonts/Ikaros.otf");
 }
 
 @font-face {
   font-family: "intro";
-  src: url("/Users/stevenelleman/Library/Fonts/Intro Inline.otf");
+  src: url("fonts/Intro Inline.otf");
 }
 
 /*Good for nav*/
 @font-face {
   font-family: "mensch";
-  src: url("/Users/stevenelleman/Library/Fonts/mensch.ttf");
+  src: url("fonts/mensch.ttf");
 }
 
 @font-face {
   font-family: "ostrich";
-  src: url("/Users/stevenelleman/Library/Fonts/OstrichSansInline-Regular.otf");
+  src: url("fonts/OstrichSansInline-Regular.otf");
 }
 
 @font-face {
   font-family: "zag";
-  src: url("/Users/stevenelleman/Library/Fonts/Zag Regular.otf");
+  src: url("fonts/Zag Regular.otf");
 }
 
 
