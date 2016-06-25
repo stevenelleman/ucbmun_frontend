@@ -1,60 +1,99 @@
 <!DOCTYPE hmtl>
 <html>
+
 <head>
+<title> UCBMUN XXI </title>
+<link rel="stylesheet" type="text/css" href="./js/fullPage.js-master/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="./style/style.css" />
 
-<style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-</style>
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="./js/fullPage.js-master/vendors/jquery.easings.min.js"></script>
+
+<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+<script type="text/javascript" src="./js/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="./js/fullPage.js-master/jquery.fullPage.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
 </head>
 <body>
 
 <div class="nav-container">
-  <div class="nav-bar-active">
-    <div class="logo"></div>
-    <div class="home-link">
-      <a href="#home">
-        Home
-      </a>
-    </div>
-    <div class="about-link">
-      <a href="#about">
-        About Us
-      </a>
-    </div>
-    <div class="committee-link">
-      <a href="#committee">
-        Committees
-      </a>
-    </div>
-    <div class="info-link">
-      <a href="#info">
-        Information
-      </a>
-    </div>
-    <div class="attraction-link">
-      <a href="#attraction">
-        Attraction
-      </a>
-    </div>
-    <div class="apply-link">
-      <a href="">
-        Apply
-      </a>
-    </div>
+  <div id="navigation" class="nav-bar-active">
+    <ul class="logo_container">
+      <div class="logo">
+        <img src="images/ucbmun_logo.png">
+      </div>
+      <div class="ucbmun">
+        UCBMUN XXI
+      </div>
+    </ul>
+
+    <ul class="links-active" id="links">
+      <div class="home-link link underline" data-menuanchor="home">
+          <a href="#home">
+            Home
+          </a>
+      </div>
+      <li class="about-link link" data-menuanchor="about">
+        <a href="#about">
+          About Us
+        </a>
+      </li>
+      <li class="committee-link link" data-menuanchor="committee">
+        <a href="#committee">
+          Committees
+        </a>
+      </li>
+      <li class="info-link link" data-menuanchor="info">
+        <a href="#info">
+          Information
+        </a>
+      </li>
+      <li class="attraction-link link" data-menuanchor="attraction">
+        <a href="#attraction">
+          Attractions
+        </a>
+      </li>
+      <li class="apply-link link">
+          Apply
+      </li>
   </div>
 </div>
 
 <div id="fullpage">
-  <div id="home" class="home-container section">
+  <div id="home" data-anchor="home" class="home-container section"  style="background-image:url(http://www.stevenelleman.com/pw2-images/images/showcase/showcase_palacearts.jpg);">
     <div class="home-title">
-    </div> 
+    </div>
   </div>
 
-  <div id="about" class="about-container section">
+  <div data-anchor="about" class="about-container section">
 
+    <div class="about-contents-container">
+      <div class="about-banner" style="background-image:url(images/about15.jpg);">
+        <div class="about-title">
+
+        </div>
+      </div>
+      <div class="about-letter">
+        Dear Head Delegates and Advisors,
+        <br></br>
+
+My name is Varsha Venkatasubramanian and I am the Secretary-General for the UC Berkeley Model United Nations Conference in March 2016. UCBMUN is in our 20th year and we are proud to be one of the oldest Model UN programs in the country. Each year our conference brings hundreds of delegates from top universities across the nation and the world to San Francisco, California to debate sociopolitical issues that resonate across the globe.
+
+This year, UCBMUN XX will be hosted from March 3rd to March 6th at the Hilton, Financial District, San Francisco. Delegates will participate in committees, utilizing months of research and preparation to develop resolutions for major geopolitical problems. Our diverse delegates come from various fields, colleges, and regions.
+
+UCBMUN creates opportunities for potential leaders of the next generation to engage in multi-faceted dialogue, face personal growth, gain comprehensive perspectives on world issues, and learn about the trials and triumphs of international diplomacy, all in the hopes of creating a better of tomorrow.
+
+Our conference draws highly motivated individuals that have already made impacts in their communities and will undoubtedly continue to do so in the future. We look forward to your joining us in this exciting journey and experience all that UCBMUN and San Francisco have to offer! If you have any questions or concerns, please don't hesitate to email me at sg@ucbmun.org.
+
+Sincerely, Varsha Venkatasubramanian
+      </div>
+    </div>
   </div>
 
-  <div id="committee" class="committee-container section">
+  <div data-anchor="committee" class="committee-container section">
     <div class="committee-contents-container">
       <div class="committee-section">
         <div class="committee-section-title">
@@ -77,7 +116,7 @@
     </div>
   </div>
 
-  <div id="info" class="info-container section">
+  <div data-anchor="info" class="info-container section">
     <div class="info-contents-container">
       <div class="title"></div>
       <div class="info-contents">
@@ -100,7 +139,7 @@
     </div>
   </div>
 
-  <div id="attraction" class="attraction-container section">
+  <div data-anchor="attraction" class="attraction-container section">
   </div>
 </div>
 

@@ -1,21 +1,174 @@
+/* Fonts */
+
+/*Good for nav */
+@font-face {
+  font-family: "code-bold";
+  src: url("/Users/stevenelleman/Library/Fonts/CODE Bold.otf");
+
+}
+
+@font-face {
+  font-family: "code-light";
+  src: url("/Users/stevenelleman/Library/Fonts/CODE Light.otf");
+
+}
+
+@font-face {
+  font-family: "ikaros";
+  src: url("/Users/stevenelleman/Library/Fonts/Ikaros.otf");
+}
+
+@font-face {
+  font-family: "intro";
+  src: url("/Users/stevenelleman/Library/Fonts/Intro Inline.otf");
+}
+
+/*Good for nav*/
+@font-face {
+  font-family: "mensch";
+  src: url("/Users/stevenelleman/Library/Fonts/mensch.ttf");
+}
+
+@font-face {
+  font-family: "ostrich";
+  src: url("/Users/stevenelleman/Library/Fonts/OstrichSansInline-Regular.otf");
+}
+
+@font-face {
+  font-family: "zag";
+  src: url("/Users/stevenelleman/Library/Fonts/Zag Regular.otf");
+}
+
+
+
+
+
 /* Navigation */
 
 .nav-container {
-
+  width: 100%
 }
 
 /* Initial presentation, triggered by scroll-down, use calhacks */
 .nav-bar-active {
-
+  letter-spacing: 1px;
+  font-family: "code-light";
+  width: 100%;
+  float: right;
+  display: inline-block;
+  position: fixed;
+  color: orange;
+  padding-top: 15px;
+  z-index: 100;
+  transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+    animation-delay: 4s;
 }
 
 .nav-bar {
-
+  letter-spacing: 1px;
+  font-family: "code-light";
+  width: 100%;
+  float: right;
+  display: inline-block;
+  position: fixed;
+  color: orange;
+  background-color: #152c6d;
+  z-index: 100;
+  opacity: 0.8;
+  transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+.links-active {
+  float: right;
+  margin-left: -40px;
+  list-style-type: none;
+  margin-right: 30px;
+  font-size: 0.9em;
+}
+.links {
+  float: right;
+  list-style-type: none;
+  margin-right: 30px;
+  margin-bottom: 0px;
+  margin-top: 6px;
+  font-size: 0.9em;
 }
 
+.link {
+  opacity: 0.8;
+  display: inline-block;
+  padding: 10px;
+  padding-bottom: 6px;
+}
+
+.link:hover {
+  opacity:0.9 !important;
+  cursor: pointer !important;
+}
+
+
+.underline {
+  opacity: 1 !important;
+  border-bottom: solid;
+}
+.logo_container {
+  float: left;
+    list-style-type: none;
+    margin-top: 0px;
+    /* vertical-align: middle; */
+    margin-bottom: 0;
+    margin-left: -20px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
 .logo {
-
+  margin-top:2px;
+  display: inline-block;
 }
+
+.logo-hidden {
+  margin-top: -100px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.link a {
+  color: orange;
+  text-decoration: none;
+}
+.apply-link {
+  border: solid;
+  border-color: white;
+  border-width: 2px;
+  border-bottom-width: 3px;
+  color: white;
+}
+
+.logo img{
+  height: 60px;
+  opacity: 1 !important;
+}
+.ucbmun {
+  display: inline-block;
+    font-family: "Ailerons";
+    font-size: 40px;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 0px;
+}
+
 .home-link {
 
 }
@@ -51,6 +204,33 @@
 /* About Us */
 .about-container {
 
+}
+
+.about-contents-container {
+  width: 100%;
+  margin: 0 auto;
+  color: black;
+  font-family: "zag";
+  height: 100%;
+}
+.about-banner {
+  height: 500px;
+  /* width: 0%; */
+  margin: 0 auto;
+  background-position: 50% 80%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.about-title {
+
+}
+.about-letter {
+  margin: 20px;
+    font-size: 0.8em;
+    letter-spacing: 3;
+    line-height: 1.4;
 }
 
 /* Information */
