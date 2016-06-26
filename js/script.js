@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage();
+    $(window).trigger('resize');
 });
-
 /*
 $(document).ready(function() {
     $('#fullpage').fullpage({
@@ -137,39 +137,99 @@ $(document).ready(
   $(window).on("hashchange", function(){
   var hash = window.location.hash.substring(1);
   var secretariat = $("#secretariat-title");
+  var sb = $("#sb-title");
+  var cc = $("#cc-title");
+  var jcc = $("#jcc-title");
+  var welcome = $("#welcome-title");
+  var logistics = $("#logistics-title");
+  var sponsor = $("#sponsor-title");
+  var insta = $("#instagram-title");
+  var explore = $("#explore-title");
+
   $(".home-link").removeClass("underline");
   $(".about-link").removeClass("underline");
   $(".committee-link").removeClass("underline");
   $(".info-link").removeClass("underline");
   $(".attraction-link").removeClass("underline");
 
-  /*secretariat.addClass("secretariat-title");
-  secretariat.removeClass("secretariat-title-active");*/
+  /* Set to Normal */
+  secretariat.removeClass("secretariat-title-active");
+  secretariat.addClass("secretariat-title");
+  sb.removeClass("sb-title-active");
+  sb.addClass("sb-title");
+  cc.removeClass("cc-title-active");
+  cc.addClass("cc-title");
+  jcc.removeClass("jcc-title-active");
+  jcc.addClass("jcc-title");
+  welcome.removeClass("welcome-title-active");
+  welcome.addClass("welcome-title");
+  logistics.removeClass("logistics-title-active");
+  logistics.addClass("logistics-title");
+  sponsor.removeClass("sponsor-title-active");
+  sponsor.addClass("sponsor-title");
+  insta.removeClass("instagram-title-active");
+  insta.addClass("instagram-title");
+  explore.removeClass("explore-title-active");
+  explore.addClass("explore-title");
+
+
+  /* Activate Title */
   switch (hash) {
     case "home":
-
-      secretariat.addClass("secretariat-title");
-      secretariat.removeClass("secretariat-title-active");
       $(".home-link").addClass("underline");
       break;
+    /* welcome */
     case "about":
-      secretariat.addClass("secretariat-title");
-      secretariat.removeClass("secretariat-title-active");
+      $(".about-link").addClass("underline");
+      welcome.addClass("welcome-title-active");
+      welcome.removeClass("welcome-title");
+      break;
+    /* secretariat */
+    case "about/1":
+      secretariat.removeClass("secretariat-title");
+      secretariat.addClass("secretariat-title-active");
       $(".about-link").addClass("underline");
       break;
+    /* sb */
     case "committee":
+      sb.addClass("sb-title-active");
+      sb.removeClass("sb-title");
       $(".committee-link").addClass("underline");
       break;
+    /* cc */
+    case "committee/1":
+      cc.addClass("cc-title-active");
+      cc.removeClass("cc-title");
+      $(".committee-link").addClass("underline");
+      break;
+    /* jcc */
+    case "committee/2":
+      jcc.addClass("jcc-title-active");
+      jcc.removeClass("jcc-title");
+      $(".committee-link").addClass("underline");
+      break;
+    /* logistics */
     case "info":
+      logistics.addClass("logistics-title-active");
+      logistics.removeClass("logistics-title");
+      $(".info-link").addClass("underline");
+      break;
+    /* sponsor */
+    case "info/1":
+      sponsor.addClass("sponsor-title-active");
+      sponsor.removeClass("sponsor-title");
       $(".info-link").addClass("underline");
       break;
     case "attraction":
+      insta.addClass("instagram-title-active");
+      insta.removeClass("instagram-title");
       $(".attraction-link").addClass("underline");
       break;
-    case "about/1":
-      console.log("Secretariat Triggered")
-      secretariat.addClass("secretariat-title-active");
-      secretariat.removeClass("secretariat-title");
+    case "attraction/1":
+      explore.addClass("explore-title-active");
+      explore.removeClass("explore-title");
+      $(".attraction-link").addClass("underline");
+      break;
     };
 })
 );
@@ -202,14 +262,39 @@ $(document).ready(function() {
 */
 
 /* Secretariat Contact */
-
 /*
-$(".secretariat-container").onclick(
-    var contact = this.closest(".secretariat-contact");
-    var contact_active = this.closest(".secretariat-contact-active");
-    contact.removeClass("secretariat-contact");
-    contact.addClass("secretariat-contact-active");
-    contact_active.removeClass("secretariat-contact-active");
-    contact_active.addClass("secretariat-contact");
+$(document).ready(
+  $(".secretariat-container").click(function() {
+      console.log("got here")
+      var contact = this.closest(".secretariat-contact");
+      var contact_active = this.closest(".secretariat-contact-active");
+      contact.removeClass("secretariat-contact");
+      contact.addClass("secretariat-contact-active");
+      contact_active.removeClass("secretariat-contact-active");
+      contact_active.addClass("secretariat-contact");
+    })
+  );*/
 
-)*/
+  function contactSecretariat(el) {
+    var contact = el.find("#secretariat-contact");
+    if (contact.hasClass("secretariat-contact")) {
+      contact.removeClass("secretariat-contact");
+      contact.addClass("secretariat-contact-active");
+    }
+    else if (contact.hasClass("secretariat-contact-active")) {
+      contact.removeClass("secretariat-contact-active");
+      contact.addClass("secretariat-contact");
+    }
+  };
+
+  function contactCommittee(el) {
+    var contact = el.find("#contact");
+    if (contact.hasClass("contact")) {
+      contact.removeClass("contact");
+      contact.addClass("contact-active");
+    }
+    else if (contact.hasClass("contact-active")) {
+      contact.removeClass("contact-active");
+      contact.addClass("contact");
+    }
+  };

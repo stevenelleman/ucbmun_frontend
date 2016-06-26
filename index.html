@@ -21,6 +21,8 @@
 
 <div class="nav-container">
   <div id="navigation" class="nav-bar-active">
+    <!-- To prevent overlapping, delete absolute from logo_container, this will mess up some of the
+    nav-bar transitions -->
     <ul class="logo_container">
       <div class="logo">
         <img src="images/ucbmun_logo.png">
@@ -31,7 +33,31 @@
     </ul>
 
     <div class="secretariat-title" id="secretariat-title">
-      Secretariat
+      Meet the Secretariat
+    </div>
+    <div class="sb-title" id="sb-title">
+      Specialized Bodies
+    </div>
+    <div class="cc-title" id="cc-title">
+      Crisis Committees
+    </div>
+    <div class="jcc-title" id="jcc-title">
+      Joint Crisis Committees
+    </div>
+    <div class="welcome-title" id="welcome-title">
+      Welcome Letter
+    </div>
+    <div class="logistics-title" id="logistics-title">
+      Logistics
+    </div>
+    <div class="sponsor-title" id="sponsor-title">
+      Sponsors
+    </div>
+    <div class="instagram-title" id="instagram-title">
+      #UCBMUN <img src="./images/instagram.png" style="height:19px;">
+    </div>
+    <div class="explore-title" id="explore-title">
+      Explore SF
     </div>
 
     <ul class="links-active" id="links">
@@ -67,7 +93,7 @@
 </div>
 
 <div id="fullpage">
-  <div id="home" data-anchor="home" class="home-container section"  style="background-image:url(http://www.stevenelleman.com/pw2-images/images/showcase/showcase_palacearts.jpg);">
+  <div id="home" data-anchor="home" class="home-container section"  style="height:800px;background-image:url(http://www.stevenelleman.com/pw2-images/images/showcase/showcase_palacearts.jpg);">
     <div class="home-title">
     </div>
   </div>
@@ -79,99 +105,127 @@
           <div class="about-title">
 
           </div>
+
+          <div class="about-letter-container">
+            <div class="about-letter-gradient">
+              <div style="width:100%;height: 150px;"></div>
+              <div class="about-letter-text">
+              Dear Head Delegates and Advisors,
+              <br></br>
+      My name is Varsha Venkatasubramanian and I am the Secretary-General for the UC Berkeley Model United Nations Conference in March 2016. UCBMUN is in our 20th year and we are proud to be one of the oldest Model UN programs in the country. Each year our conference brings hundreds of delegates from top universities across the nation and the world to San Francisco, California to debate sociopolitical issues that resonate across the globe.
+<br></br>
+      This year, UCBMUN XX will be hosted from March 3rd to March 6th at the Hilton, Financial District, San Francisco. Delegates will participate in committees, utilizing months of research and preparation to develop resolutions for major geopolitical problems. Our diverse delegates come from various fields, colleges, and regions.
+<br></br>
+      UCBMUN creates opportunities for potential leaders of the next generation to engage in multi-faceted dialogue, face personal growth, gain comprehensive perspectives on world issues, and learn about the trials and triumphs of international diplomacy, all in the hopes of creating a better of tomorrow.
+<br></br>
+      Our conference draws highly motivated individuals that have already made impacts in their communities and will undoubtedly continue to do so in the future. We look forward to your joining us in this exciting journey and experience all that UCBMUN and San Francisco have to offer! If you have any questions or concerns, please don't hesitate to email me at sg@ucbmun.org.
+<br></br>
+      Sincerely,
+<br></br>
+Varsha Venkatasubramanian
+              </div>
+            </div>
+          </div>
         </div>
-        <!--
-        <div class="about-letter">
-          Dear Head Delegates and Advisors,
-          <br></br>
-
-  My name is Varsha Venkatasubramanian and I am the Secretary-General for the UC Berkeley Model United Nations Conference in March 2016. UCBMUN is in our 20th year and we are proud to be one of the oldest Model UN programs in the country. Each year our conference brings hundreds of delegates from top universities across the nation and the world to San Francisco, California to debate sociopolitical issues that resonate across the globe.
-
-  This year, UCBMUN XX will be hosted from March 3rd to March 6th at the Hilton, Financial District, San Francisco. Delegates will participate in committees, utilizing months of research and preparation to develop resolutions for major geopolitical problems. Our diverse delegates come from various fields, colleges, and regions.
-
-  UCBMUN creates opportunities for potential leaders of the next generation to engage in multi-faceted dialogue, face personal growth, gain comprehensive perspectives on world issues, and learn about the trials and triumphs of international diplomacy, all in the hopes of creating a better of tomorrow.
-
-  Our conference draws highly motivated individuals that have already made impacts in their communities and will undoubtedly continue to do so in the future. We look forward to your joining us in this exciting journey and experience all that UCBMUN and San Francisco have to offer! If you have any questions or concerns, please don't hesitate to email me at sg@ucbmun.org.
-
-  Sincerely, Varsha Venkatasubramanian
-        </div>
-      -->
       </div>
     </div>
     <div class="slide">
+      <div class="secretariat-header"></div>
       <div class="secretariat-contents-container">
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
           </div>
-          <div class="secretariat-contact">
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
-        <div class="secretariat-container">
+        <div class="secretariat-container" onClick="contactSecretariat($(this));">
           <div class="secretariat-info">
           </div>
           <div class="secretariat-img">
+          </div>
+          <div class="secretariat-contact" id="secretariat-contact">
           </div>
         </div>
       </div>
@@ -180,23 +234,174 @@
   </div>
 
   <div data-anchor="committee" class="committee-container section">
-    <div class="committee-contents-container">
-      <div class="committee-section">
-        <div class="committee-section-title">
+    <div class="slide">
+      <div class="secretariat-header"></div>
+      <div class="sb-contents-container">
+        <div class="sb-contents">
+          <div class="sb-container-1" onClick="contactCommittee($(this));">
+            <div class="sb-info">
+            </div>
+            <div class="sb-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="sb-container-1" onClick="contactCommittee($(this));">
+            <div class="sb-info">
+            </div>
+            <div class="sb-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="sb-container-1" onClick="contactCommittee($(this));">
+            <div class="sb-info">
+            </div>
+            <div class="sb-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
         </div>
-        <div class="committee-section-scroll">
+        <div class="sb-contents">
+          <div class="sb-container-2" onClick="contactCommittee($(this));">
+            <div class="sb-info">
+            </div>
+            <div class="sb-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="sb-container-2" onClick="contactCommittee($(this));">
+            <div class="sb-info">
+            </div>
+            <div class="sb-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="committee-section">
-        <div class="committee-section-title">
+    </div>
+    <div class="slide">
+      <div class="secretariat-header"></div>
+      <div class="cc-contents-container">
+        <div class="cc-contents">
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
         </div>
-        <div class="committee-section-scroll">
+        <div class="cc-contents">
+          <div class="cc-container-2" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-2" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-2" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+        </div>
+        <div class="cc-contents">
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="cc-container-1" onClick="contactCommittee($(this));">
+            <div class="cc-info">
+            </div>
+            <div class="cc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="committee-section">
-        <div class="committee-section-title">
-        </div>
-        <div class="committee-section-scroll">
+    </div>
+    <div class="slide">
+      <div class="secretariat-header"></div>
+      <div class="jcc-contents-container">
+        <div class="jcc-contents">
+          <div class="jcc-container" onClick="contactCommittee($(this));">
+            <div class="jcc-info">
+            </div>
+            <div class="jcc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
+          <div class="jcc-container" onClick="contactCommittee($(this));">
+            <div class="jcc-info">
+            </div>
+            <div class="jcc-img">
+            </div>
+            <div class="contact" id="contact">
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -208,30 +413,259 @@
         <div class="title"></div>
         <div class="info-contents">
           <div class="info-contents-section">
-            Fee
+            <div class="fee-container">
+              <div class="fee-title-container">
+                <div class="fee-title">
+                  Fees
+                </div>
+              </div>
+              <div class="fee-contents-container">
+                <div class="fee-contents">
+                  <table style="width:100%; font-size: 16px;">
+              <tbody><tr>
+                  <th></th>
+                  <th>Early</th>
+                  <th>Regular</th>
+              </tr>
+              <tr>
+                  <td></td>
+                  <td>Sept 15 - Dec 1</td>
+                  <td>Dec 2 - Feb 15</td>
+              </tr>
+              <tr>
+                  <td>Delegation Fee</td>
+                  <td>$85</td>
+                  <td>$95</td>
+
+              </tr>
+              <tr>
+                  <td>Per Delegate</td>
+                  <td>$85</td>
+                  <td>$95</td>
+              </tr>
+              <tr>
+                  <td>Per Faculty Advisor</td>
+                  <td>$0 (Yay)</td>
+                  <td>$0 (Yay)</td>
+              </tr>
+          </tbody></table>
+
+              <div class="registration-container">
+                <div class="registration-title">
+                  Registration Terms
+                </div>
+                <div class="registration-contents">
+                  <ol>
+                          <li>
+                              <b>Payments</b><br>
+                              Payments should be made in the form of checks payable to:
+                              ASUC/UCBMUN
+                              c/o LEAD Center
+                              102 Hearst Gym MC 4500
+                              Berkeley, CA 94720-4500
+                              [UCBMUN is sponsored by the Associated Students of the University of California, a 501c3 Non-Profit Organization supporting student initiated activities]
+                          </li>
+                          <li>
+                              <b>Proof of Payment</b><br>
+                              In order to ease registration and prevent lost checks we ask that you send us Proof of Payment. Proof of Payment can either be a copy or a photo of the completed check or the USPS/UPS/FedEx tracking number, sent electronically to cos-external@ucbmun.org. The Proof of Payment is due within 20 days of Early or Regular registration (and before BayMUN if you wish to attend), and definitely within 7 days of the last registration date. If you fail to send Proof of Payment by that date and have not communicated with our Chief of Staff External, you will not be allowed to participate in UCBMUN XX. In case of special circumstances, please contact our Chief of Staff - External.
+                          </li>
+                          <li>
+                              <b>Delegation Change Guidelines</b><br>
+                              We understand that change happens and sometimes members back out of events for various reasons. If you wish to change your delegation you must inform the Chief of Staff - External within 4 weeks of your registration or February 14th whichever is earlier in order to receive a full refund. If you reduce the size of your delegation UCBMUN will refund your delegation on the first day of the conference. If you increase the size of your delegation you must bring a check for the additional amount owed on the first day of the conference.
+                          </li>
+                          <li>
+                            <b> Refund Policy </b><br>
+
+Delegations will be refunded their entire payment if they inform UCBMUN staff of their cancellation within 30 days of registering.
+Delegations will be refunded half their payment if they inform UCBMUN staff of their cancellation within 60 days of registering.
+Delegations will not be refunded if they fail to inform UCBMUN staff of their cancellation within 60 days of registering.
+                          </li>
+                          <li>
+                              <b>Enforcement Policy</b><br>
+                              We will work with you to ensure that every member of your delegation is able to participate. We will not allow any delegates to participate if they have not paid within the appropriate timeframe and not contacted our Chief of Staff External. If you have any questions feel free to contact us.
+                          </li><br>
+
+                      </ol>
+                </div>
+            </div>
           </div>
-          <div class="info-contents-section">
-            Schedule
+        </div>
+      </div>
+
+
+        <div class="schedule-container">
+          <div class="schedule-title-container">
+            <div class="schedule-title">
+              Schedule
+            </div>
           </div>
-          <div class="info-contents-section">
-            Resources
+          <div class="schedule-contents-container">
+            <div class"schedule-contents">
+
+              <div class="schedule-column">
+
+              <h2 class="center-header schedule-header"> Thursday, March 3 </h2>
+<table class="schedule-table" style="border-color: #7D9EB2 transparent #7D9EB2 transparent;">
+  <tbody><tr>
+    <td class="event-name" style="color: #1686DB"> <h5>EVENT/COMMITTEE</h5> </td>
+    <td class="event-time" style="color: #1686DB"> <span class="glyphicon glyphicon-time"></span> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Registration </h3> </td>
+    <td class="event-time">   <h4> 3:30pm - 6:30pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Model UN 101 </h3> </td>
+    <td class="event-time">   <h4> 4:30pm - 6:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Opening Ceremonies </h3> </td>
+    <td class="event-time">   <h4> 7:00pm - 7:45pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Session I </h3> </td>
+    <td class="event-time">   <h4> 8:00pm - 10:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Feedback for Head Delegates </h3> </td>
+    <td class="event-time">   <h4> 10:15pm - 10:45pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Bear Crawl </h3> </td>
+    <td class="event-time">   <h4> 11:00pm - 1:00am </h4> </td>
+  </tr>
+</tbody></table>
+</div>
+
+<div class="schedule-column">
+<h2 class="center-header schedule-header"> Friday, March 4 </h2>
+<table class="schedule-table" style="border-color: #7D9EB2 transparent #7D9EB2 transparent;">
+  <tbody><tr>
+    <td class="event-name" style="color: #1686DB"> <h5>EVENT/COMMITTEE</h5> </td>
+    <td class="event-time" style="color: #1686DB"> <span class="glyphicon glyphicon-time"></span> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Session II </h3> </td>
+    <td class="event-time">   <h4> 1:00pm - 5:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Advisor Feedback Forum </h3> </td>
+    <td class="event-time">   <h4> 3:00pm - 3:30pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Dinner </h3> </td>
+    <td class="event-time">   <h4> 5:00pm - 6:15pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Session III </h3> </td>
+    <td class="event-time">   <h4> 6:15pm - 9:15pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Feedback for Head Delegates </h3> </td>
+    <td class="event-time">   <h4> 9:30pm - 10:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Jazz Night </h3> </td>
+    <td class="event-time">   <h4> 10:00pm - 1:00am </h4> </td>
+  </tr>
+</tbody></table>
+</div>
+<div class="schedule-column">
+<br><br>
+<h2 class="center-header schedule-header"> Saturday, March 5 </h2>
+<table class="schedule-table" style="border-color: #7D9EB2 transparent #7D9EB2 transparent;">
+  <tbody><tr>
+    <td class="event-name" style="color: #1686DB"> <h5>EVENT/COMMITTEE</h5> </td>
+    <td class="event-time" style="color: #1686DB"> <span class="glyphicon glyphicon-time"></span> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Session IV </h3> </td>
+    <td class="event-time">   <h4> 10:00am - 1:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Advisor Feedback Forum </h3> </td>
+    <td class="event-time">   <h4> 11:30am - 12:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Feedback for Head Delegates </h3> </td>
+    <td class="event-time">   <h4> 1:15pm - 1:45pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Lunch </h3> </td>
+    <td class="event-time">   <h4> 1:00pm - 3:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Committee Session V </h3> </td>
+    <td class="event-time">   <h4> 3:00pm - 7:00pm </h4> </td>
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Delegate Soiree </h3> </td>
+    <td class="event-time">   <h4> 10:00pm - 2:00am </h4> </td>
+  </tr>
+</tbody></table>
+</div>
+<div class="schedule-column">
+
+<br><br>
+<h2 class="center-header schedule-header"> Sunday, March 6 </h2>
+<table class="schedule-table" style="border-color: #7D9EB2 transparent #7D9EB2 transparent;">
+  <tbody><tr>
+    <!-- <td><h3> EVENT </h3></td>
+    <td><h3> TIME </h3> </td> -->
+    <td class="event-name" style="color: #1686DB"> <h5>EVENT/COMMITTEE</h5> </td>
+    <td class="event-time" style="color: #1686DB"> <span class="glyphicon glyphicon-time"></span> </td>
+    <!-- <td> <span class="glyphicon glyphicon-time"></span> </td> -->
+  </tr>
+  <tr style="margin-bottom: -100px; color: #333333">
+    <td class="event-name"> <h3> Closing Ceremonies </h3> </td>
+    <td class="event-time">   <h4> 10:00am - 12:00pm </h4> </td>
+  </tr>
+
+</tbody></table>
+</div>
+
+            </div>
           </div>
+        </div>
+
+        <div class="location-container">
+          <div class="location-title-container">
+            <div class="location-title">
+              Locations
+            </div>
+          </div>
+          <div class="location-contents-container">
+            <div class"location-contents">
+            </div>
+          </div>
+        </div>
+
+        <div class="resources-container">
+          <div class="resources-title-container">
+            <div class="resources-title">
+              Resources
+            </div>
+          </div>
+          <div class="resources-contents-container">
+            <div class"resources-contents">
+            </div>
+          </div>
+        </div>
+
         </div>
       </div>
     </div>
     <div class="slide">
       <div class="info-contents-section">
-        Location Assignments
-      </div>
-    </div>
-    <div class="slide">
-      <div class="info-contents-section">
-        Sponsors
+        sponsor
       </div>
     </div>
   </div>
+</div>
 
   <div data-anchor="attraction" class="attraction-container section">
+    <div class="slide"></div>
+    <div class="slide"></div>
   </div>
 </div>
 
