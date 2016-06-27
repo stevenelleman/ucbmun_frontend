@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage();
     $(window).trigger('resize');
+    $('body').css('display', 'block');
 });
 /*
 $(document).ready(function() {
