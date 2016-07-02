@@ -6,47 +6,42 @@ $(document).ready(function() {
     $('#fullpage').fullpage();
     $(window).trigger('resize');
     $('body').css('display', 'block');
+    $(window).trigger("hashchange");
 });
 
 /* Nav Bar Active */
-var currentHash = window.location.hash.substring(1);
-var lastHash = "none";
+
+function navActive() {
+  $("#navigation").removeClass("nav-bar");
+  $("#navigation").addClass("nav-bar-active");
+  $("#links").removeClass("links");
+  $("#links").addClass("links-active");
+  $(".logo_container").removeClass("logo-hidden");
+}
+
+function navDisable() {
+  $("#navigation").removeClass("nav-bar-active");
+  $("#navigation").addClass("nav-bar");
+  $("#links").removeClass("links-active");
+  $("#links").addClass("links");
+  $(".logo_container").addClass("logo-hidden");
+}
 
 $(document).ready(function(){
-  $(window).on("hashchange", function() {
-    lastHash = currentHash;
-    currentHash = window.location.hash.substring(1);
-    console.log("LastHash: " + lastHash);
-  });
+  hash = window.location.hash.substring(1)
+  if (hash != "home") {
+    navDisable();
+  }
   $(window).on("hashchange", function(){
-    var hash = window.location.hash.substring(1);
-    var current = $("#navigation");
-    var links = $("#links");
-    var logo = $(".logo_container");
-    if (hash === "home") {
-      if (lastHash !== "home") {
-        console.log("Nav Bar Active")
-        current.removeClass("nav-bar");
-        current.addClass("nav-bar-active");
-        links.removeClass("links");
-        links.addClass("links-active");
-        logo.removeClass("logo-hidden");
-      }
-    }
-    else if (hash !== "home") {
-      if (lastHash === "home") {
-        console.log("Nav Bar Inactive")
-        current.removeClass("nav-bar-active");
-        current.addClass("nav-bar");
-        links.removeClass("links-active");
-        links.addClass("links");
-        logo.addClass("logo-hidden");
-      }
+    hash = window.location.hash.substring(1)
+    if (hash == "home") {
+      navActive();
+    } else {
+      navDisable();
     }
   });
 });
 
-/* Committee Height Adjustment */
 
 
 /*
