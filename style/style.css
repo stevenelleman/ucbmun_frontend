@@ -236,8 +236,7 @@ letter-spacing: 3;
 line-height: 1.4;
 position: relative;
 margin: 0 auto;
-top: 190px;
-height: 600px;
+height: 70%;
 background: -webkit-linear-gradient(rgba(0, 0, 0, 0), #f9f9f9 50%);
 background: -o-linear-gradient(rgba(0,0,0,0), #f9f9f9 50%);
 background: -moz-linear-gradient(rgba(0,0,0,0), #f9f9f9 50%);
@@ -541,6 +540,35 @@ transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -ms-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
+}
+
+#ob-title {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.ob-title {
+  font-family: code-light;
+    font-size: 1.2em;
+    position: absolute;
+    margin-top: -33px;
+    margin-left: 20px;
+    color: orange;
+    letter-spacing: 3;
+}
+
+.ob-active {
+  font-family: code-light;
+    font-size: 1.2em;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 20px;
+    color: orange;
+    letter-spacing: 3;
+    opacity: 1;
+    /*text-decoration: underline;*/
 }
 
 #sb-title {

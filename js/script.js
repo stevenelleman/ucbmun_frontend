@@ -1,8 +1,54 @@
+/*var insta_user_token = "3138978259.1677ed0.e24f8f02074641b7b89f27fc9b75ec04";
+var insta_http = "https://api.instagram.com/v1/users/self/media/recent/?access_token=";
+var insta_http += insta_token;*/
+
 $(document).ready(function() {
     $('#fullpage').fullpage();
     $(window).trigger('resize');
     $('body').css('display', 'block');
 });
+
+/* Nav Bar Active */
+var currentHash = window.location.hash.substring(1);
+var lastHash = "none";
+
+$(document).ready(function(){
+  $(window).on("hashchange", function() {
+    lastHash = currentHash;
+    currentHash = window.location.hash.substring(1);
+    console.log("LastHash: " + lastHash);
+  });
+  $(window).on("hashchange", function(){
+    var hash = window.location.hash.substring(1);
+    var current = $("#navigation");
+    var links = $("#links");
+    var logo = $(".logo_container");
+    if (hash === "home") {
+      if (lastHash !== "home") {
+        console.log("Nav Bar Active")
+        current.removeClass("nav-bar");
+        current.addClass("nav-bar-active");
+        links.removeClass("links");
+        links.addClass("links-active");
+        logo.removeClass("logo-hidden");
+      }
+    }
+    else if (hash !== "home") {
+      if (lastHash === "home") {
+        console.log("Nav Bar Inactive")
+        current.removeClass("nav-bar-active");
+        current.addClass("nav-bar");
+        links.removeClass("links-active");
+        links.addClass("links");
+        logo.addClass("logo-hidden");
+      }
+    }
+  });
+});
+
+/* Committee Height Adjustment */
+
+
 /*
 $(document).ready(function() {
     $('#fullpage').fullpage({
@@ -93,43 +139,7 @@ $(document).ready(
     }
   })
 );*/
-/* Nav Bar Active */
-var currentHash = window.location.hash.substring(1);
-var lastHash = "none";
 
-$(document).ready(function(){
-  $(window).on("hashchange", function() {
-    lastHash = currentHash;
-    currentHash = window.location.hash.substring(1);
-    console.log("LastHash: " + lastHash);
-  });
-  $(window).on("hashchange", function(){
-    var hash = window.location.hash.substring(1);
-    var current = $("#navigation");
-    var links = $("#links");
-    var logo = $(".logo_container");
-    if (hash === "home") {
-      if (lastHash !== "home") {
-        console.log("Nav Bar Active")
-        current.removeClass("nav-bar");
-        current.addClass("nav-bar-active");
-        links.removeClass("links");
-        links.addClass("links-active");
-        logo.removeClass("logo-hidden");
-      }
-    }
-    else if (hash !== "home") {
-      if (lastHash === "home") {
-        console.log("Nav Bar Inactive")
-        current.removeClass("nav-bar-active");
-        current.addClass("nav-bar");
-        links.removeClass("links-active");
-        links.addClass("links");
-        logo.addClass("logo-hidden");
-      }
-      }
-    });
-  });
 
 
 
@@ -138,6 +148,7 @@ $(document).ready(
   $(window).on("hashchange", function(){
   var hash = window.location.hash.substring(1);
   var secretariat = $("#secretariat-title");
+  var ob = $("#ob-title");
   var sb = $("#sb-title");
   var cc = $("#cc-title");
   var jcc = $("#jcc-title");
@@ -156,6 +167,8 @@ $(document).ready(
   /* Set to Normal */
   secretariat.removeClass("secretariat-title-active");
   secretariat.addClass("secretariat-title");
+  ob.removeClass("ob-active");
+  ob.addClass("ob-title");
   sb.removeClass("sb-title-active");
   sb.addClass("sb-title");
   cc.removeClass("cc-title-active");
@@ -189,6 +202,12 @@ $(document).ready(
     case "about/1":
       secretariat.removeClass("secretariat-title");
       secretariat.addClass("secretariat-title-active");
+      $(".about-link").addClass("underline");
+      break;
+    /* ob */
+    case "about/2":
+      ob.addClass("ob-active");
+      ob.removeClass("ob-title");
       $(".about-link").addClass("underline");
       break;
     /* sb */
