@@ -39,6 +39,12 @@
   src: url("fonts/Zag Regular.otf");
 }
 
+@font-face {
+  font-family: "stellar";
+  src: url("fonts/Stellar-Regular.otf");
+}
+
+
 
 
 
@@ -245,7 +251,7 @@ background: linear-gradient(rgba(216, 177, 177, 0), #5563c7 25%);
 .about-letter-text {
   width: 80%;
 margin: 0 auto;
-font-size: 0.9em;
+font-size: 0.7em;
 color: white;
 font-family: "mensch";
 }
@@ -304,10 +310,10 @@ font-family: "mensch";
     margin-bottom: 5px;
 }
 
+
+
 .registration-container {
   text-align: center;
-    font-size: 20;
-    margin-top: 40;
     font-family: "code-bold";
     letter-spacing: 3;
     cursor: pointer;
@@ -390,25 +396,25 @@ font-family: "mensch";
 }
 
 .registration-contents-active {
-
+  display: block;
 }
 
-.schedule-contents-container {
-  /*display: none;*/
+.schedule-contents {
+  display: none;
 }
 
-.schedule-contents-container-active {
-
+.schedule-contents-active {
+  display: block;
 }
 .schedule-contents {
 
 }
 
-.location-contents-container {
+.location-contents {
   display: none;
 }
 
-.location-contents-container-active {
+.location-contents-active {
 
 }
 
@@ -473,6 +479,7 @@ font-family: "mensch";
     height: 33.333%;
     padding-right: 1.5px;
     padding-left: 1.5px;
+    padding-bottom: 18px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -484,12 +491,12 @@ font-family: "mensch";
   background-color: orange;
   height: 15%;
   text-align: center;
-  min-height: 33px;
-  max-height: 50px;
+  min-height: 50px;
+  max-height: 80px;
 }
 
 .secretariat-name {
-  font-family: "code-bold";
+  font-family: "mensch";
   letter-spacing: 1;
   padding-top: 0.6em;
 }
@@ -510,11 +517,17 @@ font-family: "mensch";
   height: 0px;
     width: 100%;
     position: absolute;
-    bottom: 1;
+    bottom: 3;
+    opacity: 0;
+    padding: 5px;
+    font-family: "stellar";
+    font-size: 0.9em;
+    letter-spacing: 1;
     border-right: solid;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-color: green;
+    background-color: orange;
+    text-align: center;
     border-bottom-color: white;
     border-right-color: white;
   transition: all 0.5s linear;
@@ -525,15 +538,22 @@ font-family: "mensch";
 }
 
 .secretariat-contact-active {
-  height: 100px;
+  height: 40px;
 width: 100%;
 position: absolute;
-bottom: 1;
+bottom: 3;
+padding: 5px;
+font-family: "stellar";
+font-size: 0.9em;
+letter-spacing: 1;
+text-align: center;
 border-right: solid;
+border-color: white;
 -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box;
-background-color: green;
-border-bottom-color: white;
+background-color: orange;
+opacity: 1;
+text-align: center;
 border-right-color: white;
 transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
@@ -652,6 +672,42 @@ transition: all 0.5s linear;
     /*text-decoration: underline;*/
 }
 
+.cc-contact {
+  height: 0px;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    border-right: solid;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: orange;
+    border-bottom-color: white;
+    border-right-color: white;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+.cc-contact-active {
+  height: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 1;
+    border-right: solid;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: orange;
+    border-bottom-color: white;
+    border-right-color: white;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
 #jcc-title {
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -684,6 +740,7 @@ transition: all 0.5s linear;
 .sb-contents-container {
   width: 100%;
   height: 100%;
+  margin-top: 2.7em;
   /*margin-top: 2.7em;*/
 }
 
@@ -731,7 +788,7 @@ transition: all 0.5s linear;
     border-right: solid;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background-color: green;
+    background-color: orange;
     border-bottom-color: white;
     border-right-color: white;
   transition: all 0.5s linear;
@@ -775,18 +832,20 @@ transition: all 0.5s linear;
 }
 
 .cc-name {
-  font-family: "code-bold";
+  font-family: "stellar";
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .cc-info {
   background-color: orange;
-  height: 15%;
+  height: 20%;
   text-align: center;
 }
 
 .cc-img {
   background-color: #152c6d;
-  height: 85%;
+  height: 80%;
 }
 
 

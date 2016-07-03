@@ -306,12 +306,23 @@ $(document).ready(
 
   function contactCommittee(el) {
     var contact = el.find("#contact");
-    if (contact.hasClass("contact")) {
-      contact.removeClass("contact");
-      contact.addClass("contact-active");
+    if (contact.hasClass("cc-contact")) {
+      contact.removeClass("cc-contact");
+      contact.addClass("cc-contact-active");
     }
-    else if (contact.hasClass("contact-active")) {
-      contact.removeClass("contact-active");
-      contact.addClass("contact");
+    else if (contact.hasClass("cc-contact-active")) {
+      contact.removeClass("cc-contact-active");
+      contact.addClass("cc-contact");
     }
   };
+
+  /* Resize Contents to 100% of Nav to Window Bottom */
+$(document).ready(function(){
+  $(document).on("resize", function(){
+    var header = $(".nav-bar");
+    var contents = $(".secretariat-contents-container");
+    var header_height = header.height;
+    var window_height = $(window).height;
+    contents.css("height", window_height - header_height + "px")
+  });
+});
