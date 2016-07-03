@@ -6,7 +6,6 @@ $(document).ready(function() {
     $('#fullpage').fullpage();
     $(window).trigger('resize');
     $('body').css('display', 'block');
-    $(window).trigger("hashchange");
 });
 
 /* Nav Bar Active */
@@ -29,7 +28,10 @@ function navDisable() {
 
 $(document).ready(function(){
   hash = window.location.hash.substring(1)
-  if (hash != "home") {
+  if (hash == "") {
+    console.log("correct!");
+  }
+  if (hash != "home" & hash != "") {
     navDisable();
   }
   $(window).on("hashchange", function(){

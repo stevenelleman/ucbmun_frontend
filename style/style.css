@@ -26,7 +26,7 @@
 /*Good for nav*/
 @font-face {
   font-family: "mensch";
-  src: url(../"fonts/mensch.ttf");
+  src: url("../fonts/mensch.ttf");
 }
 
 @font-face {
@@ -81,7 +81,7 @@ body {
   color: orange;
   background-color: #152c6d;
   z-index: 100;
-  opacity: 0.9;
+  /*opacity: 0.9;*/
   transition: all 0.5s linear;
     -webkit-transition: all 0.5s linear;
     -moz-transition: all 0.5s linear;
@@ -211,7 +211,7 @@ body {
   width: 100%;
   margin: 0 auto;
   color: black;
-  font-family: "zag";
+  font-family: "mensch";
   height: 100%;
 }
 .about-banner {
@@ -231,7 +231,7 @@ body {
 }
 
 .about-letter-gradient {
-  font-size: 0.8em;
+  font-size: 1em;
 letter-spacing: 3;
 line-height: 1.4;
 position: relative;
@@ -253,6 +253,8 @@ font-family: "mensch";
 /* Information */
 .info-contents-container {
   /*margin-top: -380px;*/
+  width: 100%;
+  height: 100%;
 }
 
 .info-container {
@@ -422,7 +424,7 @@ font-family: "mensch";
 
 .secretariat-header {
   width: 100%;
-  height: 42px;
+  height: 43px;
   background-color: #152c6d;
 }
 
@@ -457,7 +459,11 @@ font-family: "mensch";
 
 .secretariat-contents-container {
   white-space: nowrap;
-  width: 100%
+  width: 100%;
+  height: 100%;
+    padding-top: 1.5em;
+  /*background-color: #152c6d;*/
+  /*padding-top: 2.7em;*/
 }
 
 .secretariat-container {
@@ -465,7 +471,8 @@ font-family: "mensch";
     position: relative;
     width: 25%;
     height: 33.333%;
-    padding: 1.5px;
+    padding-right: 1.5px;
+    padding-left: 1.5px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -475,26 +482,28 @@ font-family: "mensch";
 
 .secretariat-info {
   background-color: orange;
-  height: 35px;
+  height: 15%;
   text-align: center;
-  padding-top: 10px;
+  min-height: 33px;
+  max-height: 50px;
 }
 
 .secretariat-name {
   font-family: "code-bold";
   letter-spacing: 1;
+  padding-top: 0.6em;
 }
 
 .secretariat-rank {
   font-family: "code-bold";
   letter-spacing: 2;
   padding-top:0.2em;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 .secretariat-img {
   background-color: #152c6d;
-  height: 200px;
+  height: 85%;
 }
 
 .secretariat-contact {
@@ -672,14 +681,17 @@ transition: all 0.5s linear;
     /*text-decoration: underline;*/
 }
 
-.sb-contents {
-
+.sb-contents-container {
+  width: 100%;
+  height: 100%;
+  /*margin-top: 2.7em;*/
 }
 
 .sb-container-1 {
   float: left;
     position: relative;
     width: 33.333%;
+    height: 50%;
     padding: 1.5px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
@@ -692,6 +704,7 @@ transition: all 0.5s linear;
   float: left;
     position: relative;
     width: 50%;
+    height: 50%;
     padding: 1.5px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
@@ -702,12 +715,12 @@ transition: all 0.5s linear;
 
 .sb-info {
   background-color: orange;
-  height: 70px;
+  height: 20%;
 }
 
 .sb-img {
   background-color: #152c6d;
-  height: 300px;
+  height: 80%;
 }
 
 .sb-contact {
@@ -728,14 +741,18 @@ transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
 }
 
-.cc-contents {
-
+.cc-contents-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 1.3em;
+  /*padding-top: 2.7em;*/
 }
 
 .cc-container-1 {
   float: left;
     position: relative;
     width: 25%;
+    height: 33.333%;
     padding: 1.5px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
@@ -748,6 +765,7 @@ transition: all 0.5s linear;
   float: left;
     position: relative;
     width: 33.333%;
+    height: 33.333%;
     padding: 1.5px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
@@ -756,26 +774,33 @@ transition: all 0.5s linear;
     cursor: pointer;
 }
 
+.cc-name {
+  font-family: "code-bold";
+    padding-top: 10px;
+}
 .cc-info {
   background-color: orange;
-  height: 50px;
+  height: 15%;
+  text-align: center;
 }
 
 .cc-img {
   background-color: #152c6d;
-  height: 200px;
+  height: 85%;
 }
 
 
 
 .jcc-contents {
-
+  width: 100%;
+  height: 100%;
 }
 
 .jcc-container {
   float: left;
     position: relative;
     width: 50%;
+    height: 100%;
     padding: 1.5px;
     /* padding-bottom: 3px; */
     -webkit-box-sizing: border-box;
