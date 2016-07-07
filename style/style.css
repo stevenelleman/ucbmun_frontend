@@ -264,13 +264,29 @@ font-family: "mensch";
 }
 
 .info-container {
-
+  text-align: center;
+    font-family: "code-bold";
+    letter-spacing: 3;
+    cursor: pointer;
 }
 
-.info-contents-section {
-
+.info-title {
+  font-size: 3em;
+    font-family: "code-bold";
+    letter-spacing: 3;
+    border: solid;
+    border-color: orange;
+    color: orange;
+    width: 100%;
+    text-align: center;
+    padding-top: 6;
+    cursor: pointer;
+    /* margin: 5; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 5px;
 }
-
 
 
 
@@ -292,32 +308,9 @@ font-family: "mensch";
 
 }
 
-.fee-title {
-  font-size: 3em;
-    font-family: "code-bold";
-    letter-spacing: 3;
-    border: solid;
-    border-color: orange;
-    color: orange;
-    width: 100%;
-    text-align: center;
-    padding-top: 6;
-    cursor: pointer;
-    /* margin: 5; */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
 
 
 
-.registration-container {
-  text-align: center;
-    font-family: "code-bold";
-    letter-spacing: 3;
-    cursor: pointer;
-}
 
 .registration-contents {
   font-family: "ikaros";
@@ -325,42 +318,6 @@ font-family: "mensch";
     text-align: left;
     color: black;
     display: none;
-}
-
-.schedule-title {
-  font-size: 3em;
-    font-family: "code-bold";
-    letter-spacing: 3;
-    border: solid;
-    border-color: orange;
-    color: orange;
-    width: 100%;
-    text-align: center;
-    padding-top: 6;
-    cursor: pointer;
-    /* margin: 5; */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 5px;
-}
-
-.location-title {
-  font-size: 3em;
-    font-family: "code-bold";
-    letter-spacing: 3;
-    border: solid;
-    border-color: orange;
-    color: orange;
-    width: 100%;
-    text-align: center;
-    padding-top: 6;
-    cursor: pointer;
-    /* margin: 5; */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 5px;
 }
 
 .schedule-column {
@@ -373,32 +330,12 @@ font-family: "mensch";
     box-sizing: border-box;
 }
 
-.resources-title {
-  font-size: 3em;
-    font-family: "code-bold";
-    letter-spacing: 3;
-    border: solid;
-    border-color: orange;
-    color: orange;
-    width: 100%;
-    text-align: center;
-    padding-top: 6;
-    cursor: pointer;
-    /* margin: 5; */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
 .registration-contents {
   display: none;
 }
-
 .registration-contents-active {
   display: block;
 }
-
 .schedule-contents {
   display: none;
 }
@@ -406,24 +343,17 @@ font-family: "mensch";
 .schedule-contents-active {
   display: block;
 }
-.schedule-contents {
-
-}
-
 .location-contents {
   display: none;
 }
-
 .location-contents-active {
-
+  display: block;
 }
-
-.resources-contents-container {
+.resources-contents {
   display: none;
 }
-
-.resources-contents-container-active {
-
+.resources-contents-active {
+  display: block;
 }
 
 /* Secretariat */
@@ -773,6 +703,15 @@ transition: all 0.5s linear;
 .sb-info {
   background-color: orange;
   height: 20%;
+  text-align: center;
+}
+
+.sb-name {
+  font-family: "stellar";
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.4em;
 }
 
 .sb-img {

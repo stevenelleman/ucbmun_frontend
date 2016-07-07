@@ -326,3 +326,22 @@ $(document).ready(function(){
     contents.css("height", window_height - header_height + "px")
   });
 });
+
+/* Open/Close Information sections */
+function closeAll() {
+  $(".schedule-contents").css("display", "none");
+  $(".fee-contents").css("display", "none");
+  $(".registration-contents").css("display", "none");
+  $(".location-contents").css("display", "none");
+  $(".resource-contents").css("display", "none");
+}
+
+$(document).ready(function(){
+  $(".info-container").onclick(function(){
+    var id = $(this).id;
+    console.log(id);
+    closeAll();
+    var class_name = id + "-contents";
+    $("." + class_name).css("display", "block");
+  });
+});
